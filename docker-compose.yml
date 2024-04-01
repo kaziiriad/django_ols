@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ols_db
+    ports:
+      - "5432:5432"
+  
+  web: 
+    container_name: django_ols
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+     - SECRET_KEY=${SECRET_KEY}
+     - DATABASE_URL=postgres://user:${DB_PASSWORD}@db:5432/ols_db
+     - DATABASE_HOST=db
+    depends_on: 
+      - db
