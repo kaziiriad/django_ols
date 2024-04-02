@@ -1,52 +1,91 @@
+# Created by https://www.gitignore.io
+
+### OSX ###
 .DS_Store
-.huskyrc.json
-out
-log.log
-**/node_modules
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+
+### Django ###
+*.log
+*.pot
 *.pyc
-*.vsix
-envVars.txt
-**/.vscode/.ropeproject/**
-**/testFiles/**/.cache/**
-*.noseids
-.nyc_output
-.vscode-test
-__pycache__
-npm-debug.log
-**/.mypy_cache/**
-!yarn.lock
-coverage/
-cucumber-report.json
-**/.vscode-test/**
-**/.vscode test/**
-**/.vscode-smoke/**
-**/.venv*/
-port.txt
-precommit.hook
-python_files/lib/**
-python_files/get-pip.py
-debug_coverage*/**
-languageServer/**
-languageServer.*/**
-bin/**
-obj/**
-.pytest_cache
-tmp/**
-.python-version
-.vs/
-test-results*.xml
-xunit-test-results.xml
-build/ci/performance/performance-results.json
-!build/
-debug*.log
-debugpy*.log
-pydevd*.log
-nodeLanguageServer/**
-nodeLanguageServer.*/**
-dist/**
-# translation files
-*.xlf
-package.nls.*.json
-l10n/
+__pycache__/
+local_settings.py
+
 .env
-ols.code-workspace
+db.sqlite3
+populate_db.py
+courses.json
