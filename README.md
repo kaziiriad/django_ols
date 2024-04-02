@@ -25,7 +25,7 @@ git clone https://github.com/kaziiriad/django_ols.git
 ```bash
 cd django_ols
 ```
-3. Modify the `env.example` to `.env` follow instructions:
+3. Modify the `env.example` to `.env` and add API credentials:
 
 4. Build and run the Docker containers:
 
