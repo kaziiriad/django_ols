@@ -47,12 +47,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'drf_yasg',
+
 ]
 
 EXTERNAL_APPS = [
     'rest_framework',
     'ols_app',
     'django_filters',
+
 
 ]
 
@@ -103,7 +106,7 @@ DATABASES = {
     #     'PORT': env('DB_PORT'),
     # }
 
-    'default': dj_database_url.config(default=env('DB_URL'))
+    'default': dj_database_url.config(default=env('DB_URL')),
 
 }
 
@@ -151,4 +154,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}
+
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Basic': {
+            'type': 'basic'
+        }
+    }
 }
