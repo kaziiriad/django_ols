@@ -7,6 +7,7 @@ This project is a backend system for an online learning platform developed using
 ## API ENDPOINTS
 ### Course
 - **GET /courses:** Retrieves a list of available courses.
+
 - **GET /courses/id:** Retrieves a specific course by its ID.
 - **POST /courses:** Create a new course.
 
@@ -45,6 +46,7 @@ docker-compose up --build
 
 ## Usage
 - Retrieve a list of courses: Send a **GET** request to `/courses`.
+- Retrieves a filtered list of available courses using properties like *instructor*, *price* or *duration*: **GET** `/courses/?{query_params}`
 - Retrieve a specific course by ID: Send a **GET** request to `/courses/id`, replacing `id` with the ID of the course.
 - Create a new course: Send a **POST** request to `/courses` with the required course details in the request body.
 - Enroll in a course: Send a **POST** request to `/enrollments` with the necessary enrollment information in the request body.
