@@ -55,6 +55,17 @@ docker-compose up --build
 
 Testing has been conducted to ensure the expected behavior of the backend system. You can run the tests using the following command:
 
+1. Start the database
 ```bash
-docker-compose run web python manage.py test
+docker compose -d up db
 ```
+2. Run the test
+```bash
+python manage.py test
+```
+
+## Contributors
+- [Sultan Mahmud](https://github.com/kaziiriad)
+
+## License
+This project is licensed under the [MIT License](https://opensource.org/license/mit).
