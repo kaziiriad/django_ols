@@ -35,8 +35,8 @@ docker-compose up --build
 ```
 5. Access the API endpoints through the appropriate URLs:
 
-- Course API: `http://localhost:8000/courses`
-- Enrollment API: `http://localhost:8000/enrollments`
+- Course API: `http://localhost:8000/api/courses`
+- Enrollment API: `http://localhost:8000/api/enrollments`
 
 ## Dependencies
 - **Django**
